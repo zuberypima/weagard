@@ -47,7 +47,7 @@ class _GeneralViewScreenState extends State<GeneralViewScreen> {
             ],
           ),
         ),
-        body: TabBarView(
+        body:const TabBarView(
           children: [
             TodayWeatherView(),
             TomorrowWeatherView(),
