@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:wegard/screens/widgets/cureentDetails.dart';
 import 'package:wegard/screens/widgets/detailsContainer.dart';
+import 'package:wegard/services/api_data.dart';
 
 class TodayWeatherView extends StatefulWidget {
   const TodayWeatherView({super.key});
@@ -29,7 +30,10 @@ class _TodayWeatherViewState extends State<TodayWeatherView> {
                 
               ],),
               Column(children: [
-                current_details(context)
+                current_details(context),
+                ElevatedButton(onPressed: (){
+                  fetchWeatherApi();
+                }, child: Text("Click Me"))
               ],)
             ],
           )),
