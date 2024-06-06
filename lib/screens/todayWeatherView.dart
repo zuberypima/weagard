@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:wegard/screens/widgets/cureentDetails.dart';
 import 'package:wegard/screens/widgets/detailsContainer.dart';
-import 'package:wegard/services/api_data.dart';
+import 'package:wegard/services/temperatureModel.dart';
 
 class TodayWeatherView extends StatefulWidget {
   const TodayWeatherView({super.key});
